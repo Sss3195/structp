@@ -7,6 +7,20 @@
 //
 
 import Foundation
-
-print("Hello, World!")
-
+struct markc {
+    var mark1 = 100
+    var mark2 = 90
+    var mark3: Int
+    init(mark3: Int) {
+        self.mark3 = mark3
+    }
+    func display(site: Int) -> Int {
+        return mark2
+    }
+}
+var a = markc(mark3: 80)
+var b = a
+b.mark3 = 200
+print("\(a.mark3)" + " " + "\(a.mark1)")
+print(b.mark3)
+print("\(b.mark3)" + " " + "\(b.mark1)")
